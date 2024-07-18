@@ -1,0 +1,43 @@
+###
+
+POST http://localhost:3000/addItem
+Content-Type: application/json
+
+{
+    "title": "Learn Html",
+    "description": "To learn static website",
+    "archieve": "0",
+    "is_delete":"0"
+}
+
+
+###
+
+GET http://localhost:3000/getNotes
+
+###
+
+GET http://localhost:3000/getisDelete
+###
+
+GET http://localhost:3000/getArchieve
+
+###
+
+PUT  http://localhost:3000/updateArchievedNotes
+Content-Type: application/json
+
+{
+    "id": "23",
+    "archieve": "1"
+}
+
+###
+
+PUT  http://localhost:3000/updateDeletedNotes
+Content-Type: application/json
+
+{
+    "id": "8",
+    "is_delete": "1"
+}
